@@ -16,9 +16,7 @@ for i in range(rows):
     for j in range(cols):
         # Multiply by 255 and round to the nearest integer
         intensity_uint8[i, j] = int(round(intensity[i, j] * 255)) #converts the intensity to be from 0-255 instead of float 0-1
-
-# ----- Step 4. Compute histogram and cumulative distribution (explicitly) -----
-# Initialize histogram array with 256 bins (for 0-255 levels)
+        
 hist = np.zeros(256, dtype=int)
 for i in range(rows):
     for j in range(cols):
