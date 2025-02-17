@@ -83,7 +83,7 @@ for k in range(K):
         g2[m_idx, n_idx] = avg_val
         P[u, 4] = avg_val  
 
-fig1, ax1 = plt.subplots(1, 2, figsize=(18, 9))
+fig1, ax1 = plt.subplots(1, 2, figsize=(12, 6))
 
 ax1[0].imshow(f, cmap='gray')
 ax1[0].set_title("Input Image")
