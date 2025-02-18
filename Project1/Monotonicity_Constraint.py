@@ -2,7 +2,7 @@ import numpy as np
 from skimage import io
 import matplotlib.pyplot as plt
 
-K = 256  #gray levels
+K = 256  # of gray levels
 
 use_medium = True
 
