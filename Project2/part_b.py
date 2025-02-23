@@ -7,7 +7,7 @@ I1 = cv2.imread('food1.jpg').astype(np.float32) / 255.0 #read image
 I1 = cv2.cvtColor(I1, cv2.COLOR_BGR2RGB)  #convert to RGB
 M, N, C = I1.shape
 
-s = float(input("Enter zooming factor (0.1 to 3.0): ")) #read s the scaling factor
+s = float(input("Enter scale value (0.1 to 3.0): ")) #read s the scaling factor
 A = np.array([[s, 0.0], [0.0, s]])  #scale the transformation matrix
 T = np.array([0, 0])  
 
